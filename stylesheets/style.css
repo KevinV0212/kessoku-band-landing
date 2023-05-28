@@ -1,3 +1,6 @@
+*{
+    background-color:black;
+}
 body{
     height:100vh;
     margin:0;
@@ -10,7 +13,7 @@ body{
 
 /* Top section */
 .top, .footer{
-    background-color:#1F2937;
+    background-color: black;
 }
 .top{
     padding:10px 130px 60px;
@@ -20,6 +23,16 @@ body{
     justify-content:space-between;
     align-items:center;
     margin-bottom:80px;
+}
+.logo{
+    max-width:50px;
+    display:flex;
+    flex:auto;
+
+}
+.logo img{
+    min-width:50px;
+
 }
 .nav{
     margin:0;
@@ -70,6 +83,7 @@ body{
 }
 .hook img{
     min-width:200px;
+    max-width:400px;
     flex-shrink:1;
 }
 .summary{
@@ -84,8 +98,15 @@ body{
     padding: 20px 150px;
     font-size:36px;
     font-weight:800;
-    color:#1F2937;
+    background-color:rgb(246,184,16);
+    color:black;
     text-align:center;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+.card-deck, .card, .card p, .card span{
+    background:none;
 }
 .card-deck{
     margin:30px;
@@ -94,25 +115,36 @@ body{
 }
 .card{
     font-size:18px;
-    color:#1F2937;
+    color:black;
+    
 }
 
 .card img{
+    width:150px;
+    height:150px;
     max-width:150px;
-    border: 3px solid #3882F6;
+    max-height:150px;
+    border: 3px solid black;
     border-radius:10px;
+    object-fit:cover;
 }
 
+.card p{
+    padding:0;
+    margin:0;
+}
 /* Quote Section */
+
 .quote{
     padding: 80px 200px;
-    background-color: #e5e7eb;
+    background-color: #DDDDDC;
 }
 
 .quote-text, .quote-author{
     padding:0;
     margin:0;
-    color:#1F2937;
+    background:none;
+    color:black;
 }
 .quote-text{
     font-size:36px;
@@ -131,9 +163,11 @@ body{
 .contact{
     padding: 60px 130px;
 }
+.contact-body,.contact-phrase, .contact-instructions{
+    background-color:rgb(246,184,16);
+}
 .contact-body{
     padding:40px 60px;
-    background-color:#3882F6;
     border-radius:5px;
     display:flex;
     justify-content:space-between;
@@ -142,7 +176,7 @@ body{
 .contact-phrase, .contact-instructions{
     padding:0;
     margin:0;
-    color:#E5E7EB;
+    color:black;
 }
 
 .contact-phrase{
@@ -168,10 +202,13 @@ button{
     border-radius:10px;
 }
 .btn-primary{
-    background-color:#3882F6;
-    color:#E5E7EB;
+    background-color:rgb(246,184,16);
+    color:black;
 }
 
 .border-white{
     border: 3px solid #e5e7eb;
+}
+.border-black{
+    border: 3px solid black;
 }
